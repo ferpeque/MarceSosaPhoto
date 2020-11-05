@@ -1,0 +1,727 @@
+html {
+
+	font-size: 62.5;
+
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+}
+
+
+body {
+
+	font-family: 'Roboto Slab', serif;
+}
+
+ {margin:0;}
+
+
+			/* #contenedor {
+
+			width: 90%;
+			height: 100%;
+			display: flex;	
+			flex-flow: row wrap; } */
+
+			/*height: 80%;
+			display: flex;
+			flex-basis: 100%;
+			background-image: linear-gradient(to right, #E07A5F, white);
+			NO FUNCIONA ??? 
+			justify-content: space-between; 
+    		align-items: center; 
+    		position: sticky;
+			top: 20px;*/
+
+
+
+	
+/* -- ESTILO DEL HEADER --*/
+
+.estilo__header {
+
+	background-color: white;
+}
+
+.logo {
+
+ 	height: 10vh;
+ 	width: 25vh;
+	
+	
+}		
+ 	 
+ 		/* -webkit-filter: drop-shadow(2px -2px 2px #81B29A);
+  		filter: drop-shadow(2px -2px 2px #81B29A); 
+		display:flex;
+		align-items: center; */
+
+ul li a {
+   
+  
+   	font-family: 'Raleway', sans-serif;
+  	font-size: 1em;
+	margin: 15px; 
+	color: #3d405b;	
+
+}
+
+   		 /* display: flex;
+  		 align-self: end;  NO ME FUNCIONA 
+  		 list-style-type: none;
+   		display: inline-block;  */ 
+
+ul li a:hover {
+
+	background: #81b29a;
+  	color: #fff;
+  	cursor: pointer;
+
+	
+	}
+
+
+
+
+
+
+
+	.centro {
+	
+	display: flex;
+	flex-flow: : column wrap;
+	align-items: center;
+
+	
+}
+
+.menu {
+   font-family: 'Raleway', sans-serif;
+  
+   font-size: 1em;
+
+   margin: 15px; 
+
+	}
+
+	.titulos_paginas {
+    
+    	color: #81b29a;
+    	font-family: 'Raleway', sans-serif;
+		font-size: 2em;
+    	text-transform: uppercase;
+    	letter-spacing: 6px;
+    	
+}
+
+
+	.texto_principal {
+
+	color: #3D405B;
+	font-size: 1em;
+	padding-bottom: 10px;
+	padding-top: 20px;
+	}
+
+	/*
+	FLEX NO ME FUNCIONA CON CSS PERO SI CON BOOTSTRAP
+
+	.textos {
+
+      	display: flex;
+      	justify-content: center;
+
+	}
+
+	*/
+	
+/* CARROSUEL ----- */
+
+     .estilo__boton {
+		background-color: #81b29a;
+	}
+
+	.img_tamaño {
+			/*COMO HAGO PARA QUE LA IMAGEN OPCUPE TODO EL ANCHO*/
+		height: 70vh;
+		width: 100vh;
+		margin: 0 auto;
+		
+	}
+
+
+
+
+.titulos_secciones { 
+	color: #3d405b;
+	
+	background-image: linear-gradient(to right, #E07A5F, white);
+    font-family: 'Roboto Slab', serif;
+	font-size: 1.5em;
+    text-transform: uppercase;
+    letter-spacing: 12px;
+    padding-left: 20px;
+
+	}
+
+
+/* FORMULARIOS */
+
+
+
+textarea {
+	resize: none;
+}
+.form-label {
+	font-size: 12px;
+	color: #3d405b;
+	margin: 0;
+	display: block;
+	opacity: 1;
+	-webkit-transition: .333s ease top, .333s ease opacity;
+	transition: .333s ease top, .333s ease opacity;
+}
+.form-control {
+	border-radius: 0;
+	border-color: #fbefeb; /*COLOR LINEA*/
+   	border-width: 0 0 2px 0;
+   	border-style: none none solid none;
+   	box-shadow: none;
+}
+.form-control:focus {
+	box-shadow: none;
+	border-color: #81b29a;
+}
+.js-hide-label {
+	opacity: 0; 	
+}
+.js-unhighlight-label {
+	color: #999 
+}
+.btn-start-order {
+	background: 0 0 #ffffff;
+    border: 1px solid #2f323a;
+    border-radius: 3px;
+    color: #2f323a;
+    font-family: "Raleway", sans-serif;
+    font-size: 16px;
+    line-height: inherit;
+    margin: 30px 0;
+    padding: 10px 50px;
+    text-transform: uppercase;
+    transition: all 0.25s ease 0s;
+}
+.btn-start-order:hover,.btn-start-order:active, .btn-start-order:focus {
+	border-color: #5e9bfc;
+	color: #5e9bfc;
+}
+
+
+
+
+
+/* CEREMONIAS ** !! */	
+
+	#momentos {
+	
+	color: #85a3e0;
+	font-size: 0.75em;
+	text-transform: uppercase;
+	font-style: italic;
+	position: absolute;
+
+	
+	display: flex;
+	display: row wrap;
+	justify-content: flex-end;
+
+	  /* COMO HACER PARA QUE SEA STICKY ? */
+	
+    }
+
+
+
+	.momentos_inolvidables {
+
+		margin: 5px;
+		padding: 10px;
+		
+
+	}
+
+	.prueba1 {
+
+		background-image: url(img/ahora.jpg);
+		background-repeat: no-repeat;
+		width: 100%;
+		height: 400px;
+		background-size: cover;
+		position: relative;
+
+
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+
+
+	}
+
+		.prueba1:before {
+			content: "";
+			width: 70%;
+			height: 80%;
+			position: absolute;
+			background-color: white;
+			opacity: 0.7;
+	}
+
+		.prueba1 p, article, a {
+
+			position: relative;
+	}
+
+.texto_ceremonias {
+		
+	width: 60%;
+	color: #3D405B;
+	font-size: 1em;
+	padding-bottom: 10px;
+}
+
+	.prueba2 {
+
+	
+		background-image: url(img/ahora2.jpg);
+		background-repeat: no-repeat;
+		width: 100%;
+		height: 400px;
+		background-size: cover;
+		position: relative;
+	
+
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	
+	}
+
+		.prueba2:before {
+			content: "";
+			width: 70%;
+			height: 80%;
+			position: absolute;
+			background-color: white;
+			opacity: 0.7;
+		}
+
+		.prueba2 p, article, a {
+
+			position: relative;
+		}
+
+
+.botones2 {
+
+   	text-decoration: none;
+   	padding: 5px;
+    text-align: center;
+    display: inline-block;
+	color: #3D405B;
+    background-color: transparent;
+    border-radius: 6px;
+    border: 1px solid black;
+
+}
+
+	.botones2:hover {
+
+		text-decoration: none;
+		background-color: #B0CFC0;
+		color: white;
+ 	
+ 	}
+
+
+
+/* 
+
+.efecto {
+	margin: 10px;
+	padding-left: 60px;
+	
+	animation-name: aparecer;
+	animation-duration: 4s;
+   	}
+
+@keyframes aparecer {
+	   0% {
+     opacity: 0;
+     transform: scale(0.3);
+
+   }
+   100% {
+     opacity: 1;
+     transform: scale(1);
+     
+   }
+}
+
+*/
+
+	.linea{
+    border-top: 3px solid #0077C0;
+    margin-bottom: 40px;
+	}
+
+	.contenedor-imagenes{
+    
+    width: 85%;
+    margin: auto;
+   	border-radius:3px;
+   	 margin: auto;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+	.contenedor-imagenes .imagen{
+    width: 32%;
+    position: relative;
+    height:250px;
+    margin-bottom:5px;
+    box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, .75)
+}
+
+	.imagen img{
+    width: 100%;
+    height:100%;
+    object-fit: cover;
+    padding: 15px;
+}
+
+	.overlay{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: #b0cfc0;
+    opacity: 0.9;
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+    transition: .5s ease;
+}
+
+	.overlay h2{
+    color: #fff;
+    font-weight: 300;
+    font-size:30px;
+    position: absolute;
+    top: 50%;
+    left:50%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+}
+
+.imagen:hover .overlay{
+    height:100%;
+    cursor: pointer;
+   }
+
+
+	
+/*
+
+    #eventos {
+
+    	display: grid;
+    	grid-template-columns: 0.5fr 0.5fr 1fr 0.5fr 0.5fr;
+        grid-template-rows: 0.25fr 1fr 1fr 0.25fr 1fr 1fr;
+    	
+        grid-gap: 0px 0px;
+  		
+  		grid-template-areas:
+    	"titulo1 titulo1 titulo1 titulo1 titulo1"
+    	"texto1 texto1 texto1 caba1 caba2"
+    	"texto1 texto1 texto1 caba3 caba4"
+    	"titulo2 titulo2 titulo2 titulo2 titulo2"
+    	"nata1 nata2 texto2 texto2 texto2"
+    	"nata3 nata4 texto2 texto2 texto2";
+
+    }
+
+    		.titulo1 { grid-area: titulo1; }
+			.titulo2 { grid-area: titulo2; }
+			.texto1 { grid-area: texto1; }
+			.texto2 { grid-area: texto2; }
+			.caba1 { grid-area: caba1; 
+					justify-self:center;
+					margin: 5px}
+			.caba2 { grid-area: caba2;
+					justify-self:center; 
+					margin: 5px}
+			.caba3 { grid-area: caba3; 
+					justify-self:center;
+					margin: 5px}
+			.caba4 { grid-area: caba4; 
+					justify-self:center;
+					margin: 5px}
+			.nata1 { grid-area: nata1; 
+					justify-self:center;
+					margin: 5px}
+			.nata2 { grid-area: nata2; 
+					justify-self:center;
+					margin: 5px}
+			.nata3 { grid-area: nata3; 
+					justify-self:center;
+					margin: 5px}
+			.nata4 { grid-area: nata4; 
+					justify-self:center;
+					margin: 5px}
+
+            .caba1:hover {
+            	width: 300px; height:200px;
+            	transform: translate(-40px, 20px);
+			}
+
+			.caba2:hover {
+				transform: rotate(180deg);
+			}
+
+
+			/*
+
+
+
+			.servicios {	
+
+				display: grid;
+				width: 90%;
+ 				grid-template-columns: 3fr 3fr 3fr;
+ 				grid-template-rows: 6fr;
+  				grid-gap: 0px 0px;
+  				grid-template-areas:
+    			"serv1 serv2 serv3";
+
+
+			}
+
+			.serv1 { grid-area: serv1;}
+			.serv2 { grid-area: serv2;}
+			.serv3 { grid-area: serv3;}
+
+            .caja {
+            	
+            	display: flex;
+            	flex-flow: row-wrap;
+            	justify-content: center;
+
+            }
+
+            .cajitas {
+            	
+            	display: flex;
+            	flex-direction: column;
+            	align-items: center;
+            }
+
+
+
+            .tarjeta {
+            	
+            	border-radius: 1rem;
+  				box-shadow: rgba(0, 0, 0, 0.08) 0 0 2rem;
+ 			 	grid-column-end: span 6;
+  				padding: 2rem;
+
+            }
+
+ 			.tarj_img {
+
+            width:100px;
+    		height:100px;
+    		border-radius:250px;
+	} */
+			
+
+
+/* COPY CSS DE MODELO DE TARJETAS
+fuente -- https://codepen.io/nbheemanathi/pen/rwQZVQ -- */
+
+
+.tamaño_img{
+
+  height: 200px;
+  width:  200px;
+
+  border-radius: 100%;
+
+}
+
+
+.card{
+
+  background-color: red;
+  margin: 5px;
+
+
+  width: 80%;
+
+  transition:0.5s;
+  cursor:pointer;
+}
+.card-title{  
+  font-size:15px;
+  transition:1s;
+  cursor:pointer;
+}
+.card-title i{  
+  font-size:15px;
+  transition:1s;
+  cursor:pointer;
+  color:#ffa710
+}
+.card-title i:hover{
+  transform: scale(1.25) rotate(100deg); 
+  color:#18d4ca;
+  
+}
+.card:hover{
+  transform: scale(1.05);
+  box-shadow: 10px 10px 15px rgba(0,0,0,0.3);
+}
+.card-text{
+  height:80px;  
+}
+
+.card::before, .card::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  transform: scale3d(0, 0, 1);
+  transition: transform .3s ease-out 0s;
+  background: rgba(255, 255, 255, 0.1);
+  content: '';
+  pointer-events: none;
+}
+.card::before {
+  transform-origin: left top;
+}
+.card::after {
+  transform-origin: right bottom;
+}
+.card:hover::before, .card:hover::after, .card:focus::before, .card:focus::after {
+  transform: scale3d(1, 1, 1);
+}
+
+
+
+
+
+ footer {
+     
+    
+	background-color: #578E74;
+
+	/*linear-gradient(0deg, rgba(247,222,215,1) 0%, rgba(255,255,255,1) 75%); */
+
+	padding: 10px;
+    height: 15vh;
+	
+	
+	
+	
+
+} 
+
+	.titulo_encabezado {
+
+	color: #3d405b;
+	font-family: 'Raleway', sans-serif;
+	text-transform: uppercase;
+	font-size: 1em;
+	font-style: italic; 
+
+
+}
+
+.logo_1{
+
+	width: 4vh;
+	height: 4vh;
+	padding: 2px;
+	margin: 2px;
+}
+
+
+	.datos {
+
+	color: #3d405b;
+	font-size: 0.75em;
+	line-height: 1.5em;
+	margin: 10px;
+	 }
+	/*No puedo ponerlo en columnas. 
+	display: flex;
+	flex-direction: column;*/
+	.ver { 
+
+	list-style: none;
+	
+
+}
+
+ .encabezado_direcciones {
+ 	
+ 	border: solid 1px #F0BEB0;
+ 	margin: 5px;
+ 	
+ 	
+ }
+
+
+/* FORMULARIO CONTACTOS */ 
+
+.imagen__fondo {
+
+	background-image: url(img/Img__form.jpg);
+	background-size: 100vw 100vh;
+	background-attachment: fixed;
+	
+
+}
+
+
+.formulario__contacto {
+
+	width: 450px;
+	margin: auto;
+	background: rgb(0,0,0,0.4);
+	padding: 10px 20px;
+	border-radius: 7px;
+
+}
+
+.imput__textera {
+	width: 100%;
+	margin-bottom: 20px;
+	padding: 7px;
+
+
+}
+
+#boton__formulario__contacto {
+	background: #B0CFC0;
+	padding: 20px;
+
+}
+
+@media (max-width:350px) {
+	form {
+
+		width: 100%;
+	}
+
+}
