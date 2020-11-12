@@ -97,17 +97,19 @@
 	    <textarea rows="8" cols="60"  placeholder="Deja tu comentario" class="imput__textera "></textarea>
 	   <br>
     	
-    	<p>FotoLibro</p>
+    <div class="row d-flex justify-content-between fotolibro"> 
+
+      <p>FotoLibro</p>
     		<div>Si</div>
-   				 <input type="radio" name="FotoLibro" value="Si" />
+   				 <input type="radio" name="FotoLibro" value="Si"/>
     		<div>No</div>
-   		 		<input type="radio" name="FotoLibro" value="No" />
-    <br>
+   		 		<input type="radio" name="FotoLibro" value="No"/>
+    
+    </div>
 
-    </fieldset>
+  </fieldset>
 
-   			
-    				<input type="button" value="Enviar"  class="imput__textera" id="boton__formulario__contacto" >
+   		<input type="button" value="Enviar"  id="boton__formulario__contacto"  >
 					
 		
 	
@@ -117,46 +119,39 @@
 </dir>
 
 
-<footer class="container">
+ <footer class="container">
 
-	<div class="row"> 		
+  <div class="row">     
 
-		<div class="col-6"> 
-			<div class="d-flex justify-content-center">
-					<div class="d-flex align-items-end"> 
-	        <!-- COMO ALINEO LOS ICONOS EN EL CENTRO -->
-			<img src="img/face.png" class="logo_1">
-			<img src="img/insta.png" class="logo_1">
-			<img src="img/linkd.png" class="logo_1">
-		      
-		      	</div>
-			</div>
-        </div>
-
-		
-    
-  		<div class="col-6">
-        		
-				<ul class="d-flex flex-column  "> 
-
-        		<h6 class="text-uppercase mb-4 font-weight-bold">Laboratorio Intercolor</h6>
-        		
-          		<i class="ver">lab_intercolor@gmail.com </i> 
-        	
-          		<i>11) 4794-0920</i>
-        	
-          		<i>4799-5395</i>
-
-          		</ul>
-
-        </div>
-      
-   		
-    
+    <div class="col-lg-6 col-md-6 col-sm-6"> 
+      <div class="d-flex justify-content-center">
+          <div class="d-flex align-items-end"> 
+  <!-- COMO ALINEAR EN EL CENTRO-->
+      <img src="img/face.png" class="logo_1">
+      <img src="img/insta.png" class="logo_1">
+      <img src="img/linkd.png" class="logo_1">
+          
+          </div>
+      </div>
     </div>
 
-</footer>  	
+    <div class="col-lg-6 col-md-6 col-sm-6">
+            
+        <ul class="d-flex flex-column text-center"> 
 
+            <li class="text-uppercase ver" id="ver__titulo">Laboratorio Intercolor</li>
+            
+            <li class="ver" >lab_intercolor@gmail.com </li> 
+          
+            <li class="ver">(11) 4794-0920</li>       
+
+        </ul>
+
+       </div>
+      
+  </div>
+
+</footer>
 	
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
