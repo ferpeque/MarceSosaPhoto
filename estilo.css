@@ -1,7 +1,6 @@
 html {
 
 	font-size: 62.5;
-
 	margin:0;
 	padding:0;
 	box-sizing: border-box;
@@ -16,83 +15,51 @@ body {
  {margin:0;}
 
 
-			/* #contenedor {
-
-			width: 90%;
-			height: 100%;
-			display: flex;	
-			flex-flow: row wrap; } */
-
-			/*height: 80%;
-			display: flex;
-			flex-basis: 100%;
-			background-image: linear-gradient(to right, #E07A5F, white);
-			NO FUNCIONA ??? 
-			justify-content: space-between; 
-    		align-items: center; 
-    		position: sticky;
-			top: 20px;*/
 
 
 /* -- ESTILO DEL HEADER --*/
 
-.estilo__header {
+	.estilo__header {
+		background-color: white;
+	}
 
-	background-color: white;
-}
+	.estilo__boton {
+		background-color: #81b29a;
+	}
 
-.logo {
-
- 	height: 10vh;
- 	width: 25vh;
+	.logo {
+ 		height: 10vh;
+ 		width: 25vh;
 	}	
 
 
- 	 
- 		/* -webkit-filter: drop-shadow(2px -2px 2px #81B29A);
-  		filter: drop-shadow(2px -2px 2px #81B29A); 
-		display:flex;
-		align-items: center; */
-
-	ul li a {
-   
-   	font-family: 'Raleway', sans-serif;
-  	font-size: 1em;
-	margin: 15px; 
-	color: #3d405b;	
-
+	ul li a {   
+   		font-family: 'Raleway', sans-serif;
+  		font-size: 1em;
+		margin: 15px; 
+		color: #3d405b;	
 	}
-
-   		 /* display: flex;
-  		 align-self: end;  NO ME FUNCIONA 
-  		 list-style-type: none;
-   		 display: inline-block;  
-   		 */ 
-
+  		
 	ul li a:hover {
+		background: #81b29a;
+  		color: #fff;
+  		cursor: pointer;	
+	}
 
-	background: #81b29a;
-  	color: #fff;
-  	cursor: pointer;
 	
+	.centro {	
+		display: flex;
+		flex-flow: : column wrap;
+		align-items: center;
 	}
 
-	.centro {
+	.menu {
+  		font-family: 'Raleway', sans-serif;
+  		font-size: 1em;
+		margin: 15px; 
+	}
+
 	
-	display: flex;
-	flex-flow: : column wrap;
-	align-items: center;
-
-	}
-
-.menu {
-   font-family: 'Raleway', sans-serif;
-  
-   font-size: 1em;
-
-   margin: 15px; 
-
-	}
 
 	.titulos_paginas {
     
@@ -109,7 +76,9 @@ body {
 		        		{ font-size: 1em }
 			}
 
-
+				.animate__animated.animate__fadeIn {
+  					--animate-duration: 3s;
+  				}	
 
 	.texto_principal {
 
@@ -124,51 +93,32 @@ body {
 		        		{ font-size: 0.8em }
 			}
 
-	/*
-	FLEX NO ME FUNCIONA CON CSS PERO SI CON BOOTSTRAP
-
-	.textos {
-
-      	display: flex;
-      	justify-content: center;
-
-	}
-
-	*/
 	
 /* CARROSUEL ----- */
 
-     .estilo__boton {
-		background-color: #81b29a;
-	}
+  
 
-	.img_tamaño {
-			/*COMO HAGO PARA QUE LA IMAGEN OPCUPE TODO EL ANCHO*/
+	.img_tamaño {	
 		height: 70vh;
 		width: 100vh;
 		margin: 0 auto;
-		
 	}
 
 
 
-
-.titulos_secciones { 
-	color: #3d405b;
-	
-	background-image: linear-gradient(to right, #E07A5F, white);
-    font-family: 'Roboto Slab', serif;
-	font-size: 1.5em;
-    text-transform: uppercase;
-    letter-spacing: 12px;
-    padding-left: 20px;
+	.titulos_secciones { 
+		color: #3d405b;
+		background-image: linear-gradient(to right, #E07A5F, white);
+    	font-family: 'Roboto Slab', serif;
+		font-size: 1.5em;
+    	text-transform: uppercase;
+    	letter-spacing: 12px;
+    	padding-left: 20px;
 
 	}
 
 
-/* FORMULARIOS */
-
-
+/* FORMULARIO INDEX */
 
 textarea {
 	resize: none;
@@ -205,7 +155,7 @@ textarea {
     border-radius: 3px;
     color: #2f323a;
     font-family: "Raleway", sans-serif;
-    font-size: 16px;
+    font-size: 1em;
     line-height: inherit;
     margin: 30px 0;
     padding: 10px 50px;
@@ -213,11 +163,24 @@ textarea {
     transition: all 0.25s ease 0s;
 }
 .btn-start-order:hover,.btn-start-order:active, .btn-start-order:focus {
-	border-color: #5e9bfc;
-	color: #5e9bfc;
+	border-color: #497760;
+	color: #497760;
 }
 
 
+   @media (max-width: 576px) {
+   	    .form-control {
+   	    	font-size: 0.7em;}
+		}
+
+
+
+    @media (max-width: 576px) {
+		.btn-start-order
+		       { font-size: 0.7em;
+		       	 margin: 20px 0;
+                 padding: 8px 20px;}
+		}
 
 
 
@@ -229,25 +192,20 @@ textarea {
 			font-size: 0.75em;
 			text-transform: uppercase;
 			font-style: italic;
-			position: absolute;
-
-	
 			display: flex;
 			display: row wrap;
 			justify-content: flex-end;
-
-	  /* COMO HACER PARA QUE SEA STICKY ? */
+			position: fixed;
+    			/* NO ME SALES EL STICKY !? */
 	
     }
-
-
 
 	.momentos_inolvidables {
 
 			margin: 5px;
 			padding: 10px;
-		
 
+		
 	}
 
 	.prueba1 {
@@ -256,16 +214,15 @@ textarea {
 			background-repeat: no-repeat;
 			width: 100%;
 			height: 400px;
+			margin-left: 1px;
 			background-size: cover;
 			position: relative;
-
-
 			display: flex;
 			flex-direction: column;
 			justify-content: center;
 			align-items: center;
-
-
+			animation: zoomIn;
+			animation-duration: 3s;
 	}
 
 	.prueba1:before {
@@ -274,7 +231,7 @@ textarea {
 			height: 80%;
 			position: absolute;
 			background-color: white;
-			opacity: 0.7;
+			opacity: 0.8;
 	}
 
 	.prueba1 p, article, a {
@@ -304,14 +261,15 @@ textarea {
 			background-repeat: no-repeat;
 			width: 100%;
 			height: 400px;
+			margin-left: 1px;
 			background-size: cover;
 			position: relative;
-	
-
 			display: flex;
 			flex-direction: column;
 			justify-content: center;
 			align-items: center;
+			animation: zoomIn;
+			animation-duration: 3s;
 	
 	}
 
@@ -321,7 +279,7 @@ textarea {
 			height: 80%;
 			position: absolute;
 			background-color: white;
-			opacity: 0.7;
+			opacity: 0.8;
 	}
 
 	.prueba2 p, article, a {
@@ -357,63 +315,31 @@ textarea {
 
 
 
-
-
-/* 
-
-.efecto {
-	margin: 10px;
-	padding-left: 60px;
-	
-	animation-name: aparecer;
-	animation-duration: 4s;
-   	}
-
-@keyframes aparecer {
-	   0% {
-     opacity: 0;
-     transform: scale(0.3);
-
-   }
-   100% {
-     opacity: 1;
-     transform: scale(1);
-     
-   }
-}
-
-*/
-
-
-
+/* EVENTOS */
 
 	.linea{
-    border-top: 3px solid #0077C0;
+    border-top: 2px solid #578E74;
     margin-bottom: 40px;
 	}
 
-	/*.contenedor-imagenes{
-    
-    width: 85%;
-    margin: auto;
-   	border-radius:3px;
-   	 margin: auto;
-    justify-content: space-around;
-    flex-wrap: wrap;
-}*/
+ 	   	@media (max-width: 576px) {
+		        .linea
+		        		{ border-top: 1px solid #578E74; }
+			}
 
-	.contenedor-imagenes .imagen{
-    width: 32%;
-    position: relative;
-    height:250px;
-    margin-bottom:5px;
-    box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, .75)
-}
+
 
 	.contenedor__imagenes {
 	margin: 20px;
 	margin-bottom: 30px;
 	position: relative;
+	
+	display: flex;
+	justify-content: center;
+    align-items: flex-start;
+
+
+
 }
 
 	.imagen img{
@@ -421,7 +347,7 @@ textarea {
     height:100%;
     object-fit: cover;
     padding: 5px;
-    box-shadow: 10px 10px 10px 5px #DFECE6;
+    box-shadow: 10px 10px 10px 2px #DFECE6;
     margin: 10px;
     padding-bottom: 30px;
 }
@@ -438,10 +364,10 @@ textarea {
     transition: .5s ease;
 }
 
-	.overlay h2{
+	.overlay h2  {
     color: #fff;
     font-weight: 300;
-    font-size:30px;
+    font-size:1.5em;
     position: absolute;
     top: 50%;
     left:50%;
@@ -449,126 +375,25 @@ textarea {
     transform: translate(-50%, -50%);
 }
 
+	.overlay h1  {
+    color: #fff;
+    font-weight: 300;
+    font-size:1em;
+    margin-top: 40px;
+    position: absolute;
+    top: 50%;
+    left:50%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+}
+
+
 .imagen:hover .overlay{
     height:100%;
     cursor: pointer;
    }
 
 
-	
-/*
-
-    #eventos {
-
-    	display: grid;
-    	grid-template-columns: 0.5fr 0.5fr 1fr 0.5fr 0.5fr;
-        grid-template-rows: 0.25fr 1fr 1fr 0.25fr 1fr 1fr;
-    	
-        grid-gap: 0px 0px;
-  		
-  		grid-template-areas:
-    	"titulo1 titulo1 titulo1 titulo1 titulo1"
-    	"texto1 texto1 texto1 caba1 caba2"
-    	"texto1 texto1 texto1 caba3 caba4"
-    	"titulo2 titulo2 titulo2 titulo2 titulo2"
-    	"nata1 nata2 texto2 texto2 texto2"
-    	"nata3 nata4 texto2 texto2 texto2";
-
-    }
-
-    		.titulo1 { grid-area: titulo1; }
-			.titulo2 { grid-area: titulo2; }
-			.texto1 { grid-area: texto1; }
-			.texto2 { grid-area: texto2; }
-			.caba1 { grid-area: caba1; 
-					justify-self:center;
-					margin: 5px}
-			.caba2 { grid-area: caba2;
-					justify-self:center; 
-					margin: 5px}
-			.caba3 { grid-area: caba3; 
-					justify-self:center;
-					margin: 5px}
-			.caba4 { grid-area: caba4; 
-					justify-self:center;
-					margin: 5px}
-			.nata1 { grid-area: nata1; 
-					justify-self:center;
-					margin: 5px}
-			.nata2 { grid-area: nata2; 
-					justify-self:center;
-					margin: 5px}
-			.nata3 { grid-area: nata3; 
-					justify-self:center;
-					margin: 5px}
-			.nata4 { grid-area: nata4; 
-					justify-self:center;
-					margin: 5px}
-
-            .caba1:hover {
-            	width: 300px; height:200px;
-            	transform: translate(-40px, 20px);
-			}
-
-			.caba2:hover {
-				transform: rotate(180deg);
-			}
-
-
-			/*
-
-
-
-			.servicios {	
-
-				display: grid;
-				width: 90%;
- 				grid-template-columns: 3fr 3fr 3fr;
- 				grid-template-rows: 6fr;
-  				grid-gap: 0px 0px;
-  				grid-template-areas:
-    			"serv1 serv2 serv3";
-
-
-			}
-
-			.serv1 { grid-area: serv1;}
-			.serv2 { grid-area: serv2;}
-			.serv3 { grid-area: serv3;}
-
-            .caja {
-            	
-            	display: flex;
-            	flex-flow: row-wrap;
-            	justify-content: center;
-
-            }
-
-            .cajitas {
-            	
-            	display: flex;
-            	flex-direction: column;
-            	align-items: center;
-            }
-
-
-
-            .tarjeta {
-            	
-            	border-radius: 1rem;
-  				box-shadow: rgba(0, 0, 0, 0.08) 0 0 2rem;
- 			 	grid-column-end: span 6;
-  				padding: 2rem;
-
-            }
-
- 			.tarj_img {
-
-            width:100px;
-    		height:100px;
-    		border-radius:250px;
-	} */
-			
 
 
 /* COPY CSS DE MODELO DE TARJETAS
@@ -585,18 +410,36 @@ fuente -- https://codepen.io/nbheemanathi/pen/rwQZVQ -- */
 		content:"";
 		position:absolute;
 		width: 120px;
-		height: 3px;
-		background-color: green;
+		height: 2px;
+		background-color: #578E74;
 		top: 0.6em;
 	}
 
 	.titulo__servicios::before{
-		left: 140px;
+		left: 100px;
 	}
 
 	.titulo__servicios::after {
-		right: 140px;
+		right: 100px;
 	}
+
+	  	@media (max-width: 576px) {
+		        .titulo__servicios::before
+		        		{ left: 40px;
+		        	      width: 35px;
+		        	      height: 1px;		        	  
+		        	  }
+			}
+
+		@media (max-width: 576px) {
+		        .titulo__servicios::after
+		        		{ right: 40px;
+		        	      width: 35px;
+		        	      height: 1px;	
+		        	  }
+			}
+
+
 
 
 	.tamaño_img{
@@ -687,13 +530,81 @@ fuente -- https://codepen.io/nbheemanathi/pen/rwQZVQ -- */
 
 
 
+/* FORMULARIO CONTACTOS */ 
+	.imagen__fondo {
+
+		background-image: url(img/Img__form.jpg);
+		background-size: 100vw 100vh;
+		background-attachment: fixed;
+		position: relative;
+		display: flex;
+		justify-content: center;
+		align-content: center;
+	}
+
+	.formulario__contacto {
+		width: 450px;
+		background: rgb(0,0,0,0.4);
+		margin-top: 20px;
+		margin-bottom: 20px;
+		padding: 10px 20px;
+		border-radius: 7px;
+	}
+
+	.imput__textera {
+		color: grey;
+		width: 100%;
+		margin-bottom: 20px;
+		padding: 7px;
+	}
+
+	#textera {
+		margin-top: 20px;
+
+
+	}
+
+	.caja__radio {
+		color:grey;
+		background: white;
+		width: 40%;
+		padding: 2px;
+		padding-left: 8px;
+	}
+
+	.caja__value {
+		color:grey;
+		background: white;
+		padding: 2px;
+		padding-left: 8px;
+		width: 15%;
+	}
+
+	.fotolibro {
+		margin-left: 5px;
+		width: 50vh;
+	}
+
+	#boton__formulario__contacto {
+		margin-top: 15px;
+		background: #B0CFC0;
+		height: 30px;
+	}
+
+	@media (max-width: 576px) {
+		form {
+		width: 100%;
+		}
+	}
+
 
 /*PIE DE PAGINA*/
+	
 	footer {
      	background-color: #578E74;
-/*linear-gradient(0deg, rgba(247,222,215,1) 0%, rgba(255,255,255,1) 75%); */	
-		padding: 10px;
-    	height: 15vh;
+		padding: 10px;	
+		padding-top: 20px;
+    	height: 18vh;
 	} 
 
 	.titulo_encabezado {
@@ -729,59 +640,42 @@ fuente -- https://codepen.io/nbheemanathi/pen/rwQZVQ -- */
 		line-height: 1.5em;
 		margin: 10px;
 	 }
-/*No puedo ponerlo en columnas. 
-display: flex;
-flex-direction: column;*/
+
 	#ver__titulo {
 
 		text-decoration-style: solid;
 		text-decoration-line: underline;
+		font-size: 1em;
 	}
 
 	.ver { 
 
 		list-style: none;
+		font-size: 1em;
 
 	}
 
-
-
-
-/* FORMULARIO CONTACTOS */ 
-	.imagen__fondo {
-
-		background-image: url(img/Img__form.jpg);
-		background-size: 100vw 100vh;
-		background-attachment: fixed;
-	}
-
-	.formulario__contacto {
-		width: 450px;
-		background: rgb(0,0,0,0.4);
-		padding: 10px 20px;
-		border-radius: 7px;
-	}
-
-	.imput__textera {
-		width: 100%;
-		margin-bottom: 20px;
-		padding: 7px;
-	}
-
-	.fotolibro {
-		margin-left: 5px;
-		width: 50vh;
-	}
-
-	#boton__formulario__contacto {
-		background: #B0CFC0;
-		height: 30px;
-	}
 
 	@media (max-width: 576px) {
-		form {
-		width: 100%;
-		}
-	}
+		        #ver__titulo 
+		        		{ font-size: 0.8em;
+		        		  margin-right:20px; }
+			}
+
+	@media (max-width: 576px) {
+		        .ver
+		        		{ font-size: 0.7em }
+			}
+
+	@media (max-width: 576px) {
+		        .logo_1
+		        		{ width: 4vh;
+						  height: 4vh; }
+			}	
+
+	@media (max-width: 576px) {
+		        footer
+		        		{padding-top: 10px;}
+			}	
 
      

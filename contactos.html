@@ -11,7 +11,8 @@
     crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="estilo.css">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;700&display=swap" rel="stylesheet"> 
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;300;600;700&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;300;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/> 
   </head>
 
 <body>
@@ -25,7 +26,7 @@
   		<img src="img/logo.jpg" alt="logo.provisorio" class=" navbar-brand logo">
 
   			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    			<span class="navbar-toggler-icon"></span>
+    		<span class="navbar-toggler-icon estilo__boton"></span>
   			</button>
 
   	<div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -63,26 +64,26 @@
 	</div>
 </div>
 
-<dir class="container imagen__fondo "> 
-
+<div class="container "> 
+  <div class="imagen__fondo">
 <form class="container formulario__contacto">
 	<div class="row d-flex justify-content-center">
 	
 	
 	<fieldset>
 
-		<legend class="titulos_paginas text-center">Contactenos</legend>
+		<legend class="titulos_paginas text-center animate__animated animate__fadeIn">Contactenos</legend>
 			
 			
-				<input type="text" name="nombre_apellido" placeholder="nombre apellido" id="nombre_apellido" class="imput__textera ">
+				<input type="text" name="nombre_apellido" placeholder="Nombre Apellido" id="nombre_apellido" class="imput__textera">
 			
-				<input type="text" name="direccion_mail" placeholder="direcion de mail" id="direccion_mail" class="imput__textera "> 
+				<input type="text" name="direccion_mail" placeholder="Direcion de Mail" id="direccion_mail" class="imput__textera "> 
 		<br>
 			
-				<input type="text" name="celular" placeholder="número de contacto" id="celular" class="imput__textera "> 
+				<input type="text" name="celular" placeholder="Número de Contacto" id="celular" class="imput__textera "> 
 		<br>
 			
-				<input type="date" name="fecha_del_evento" placeholder="fecha del evento" id="fecha_del_evento" class="imput__textera "> 
+				<input type="date" name="fecha_del_evento" placeholder="Fecha del Evento" id="fecha_del_evento" class="imput__textera "> 
 		<br>
 		
 		<select name="">
@@ -91,21 +92,20 @@
 			<option value="B">Bautismo</option>
 			<option value="E">Eventos empresariales</option>
 			<option value="O">Otros</option> 
-        </select>
+    </select>
 		
-		<br>
-	    <textarea rows="8" cols="60"  placeholder="Deja tu comentario" class="imput__textera "></textarea>
-	   <br>
+		
+	    <textarea rows="5" cols="40"  placeholder="Deja tu Comentario" class="imput__textera" id="textera"></textarea>
+	   
     	
     <div class="row d-flex justify-content-between fotolibro"> 
 
-      <p>FotoLibro</p>
-    		<div>Si</div>
+      <div class="caja__radio">Foto-Libro</div> 
+    		<div class="caja__value" >Si</div>
    				 <input type="radio" name="FotoLibro" value="Si"/>
-    		<div>No</div>
-   		 		<input type="radio" name="FotoLibro" value="No"/>
-    
-    </div>
+    		    <div class="caja__value">No</div>
+   		 		    <input type="radio" name="FotoLibro" value="No"/>
+      </div>
 
   </fieldset>
 
@@ -115,7 +115,8 @@
 	
 	</div>	
 </form>
-
+ 
+ </div>
 </dir>
 
 
